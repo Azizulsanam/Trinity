@@ -91,15 +91,16 @@ void BFS(int a, int b, int target)
 		q.push({ 0, b }); // Empty Jug1
 	}
 
-	// No, solution exists if ans=0
+	
 	if (!isSolvable)
 		cout << "No solution";
 }
 
-// Driver code
+
 int main()
 {
-	int Jug1 = 4, Jug2 = 3, target = 2;
+	int Jug1 = 5, Jug2 = 3, target = 4;
+	//target and jug litres can be changed according to the given puzzle
 	cout << "Path from initial state "
 			"to solution state :\n";
 	BFS(Jug1, Jug2, target);
